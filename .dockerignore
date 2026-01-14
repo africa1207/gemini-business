@@ -1,0 +1,69 @@
+# .dockerignore - 优化 Docker 构建速度
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# 文档
+*.md
+README.md
+docs/
+
+# 测试
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# 数据文件（通过挂载卷提供）
+data/
+*.json
+*.log
+
+# 环境变量（单独通过 env_file 提供）
+.env
+.env.*
+
+# Docker 相关
+docker-compose.yml
+Dockerfile*
+.dockerignore
+
+# 其他
+*.bak
+*.tmp
+.DS_Store
